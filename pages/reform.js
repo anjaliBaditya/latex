@@ -133,6 +133,57 @@ export default function FormGen() {
             />
           </label>
         </div>
+        {/* Experience 2 */}
+        <div>
+          <label className="block mb-2 font-medium">
+            Experience 2 (Company Name):
+            <textarea
+              name="experience2"
+              placeholder='Enter company name'
+              value={formData.experience2}
+              onChange={handleChange}
+              required
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+          <label className="block mt-4 mb-2 font-medium">
+            Experience 2 Highlights:
+            <textarea
+              name="experience2_highlights"
+              placeholder='Work experience highlights'
+              value={formData.experience2_highlights}
+              onChange={handleChange}
+              required
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+        </div>
+
+        {/* Experience 3 */}
+        <div>
+          <label className="block mb-2 font-medium">
+            Experience 3 (Company Name):
+            <textarea
+              name="experience3"
+              placeholder='Enter company name'
+              value={formData.experience3}
+              onChange={handleChange}
+              required
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+          <label className="block mt-4 mb-2 font-medium">
+            Experience 3 Highlights:
+            <textarea
+              name="experience3_highlights"
+              placeholder='Work experience highlights'
+              value={formData.experience3_highlights}
+              onChange={handleChange}
+              required
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+        </div>
         {/* Submit Button */}
         <button type="submit" className="bg-[#87A922] text-white py-2 px-4 rounded-md">
           Generate Resume
