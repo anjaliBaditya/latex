@@ -65,6 +65,7 @@ export default function FormGen() {
             />
           </label>
         </div>
+
         {/* Email */}
         <div>
           <label className="block mb-2 font-medium">
@@ -94,6 +95,7 @@ export default function FormGen() {
             />
           </label>
         </div>
+
         {/* Education */}
         <div>
           <label className="block mb-2 font-medium">
@@ -133,6 +135,7 @@ export default function FormGen() {
             />
           </label>
         </div>
+
         {/* Experience 2 */}
         <div>
           <label className="block mb-2 font-medium">
@@ -184,6 +187,7 @@ export default function FormGen() {
             />
           </label>
         </div>
+
         {/* Project Title and Choice */}
         <div className="mb-4">
           <label className="block mb-2 font-medium">
@@ -262,6 +266,49 @@ export default function FormGen() {
             />
           </label>
         </div>
+
+        {/* GitHub Link */}
+        <div>
+          <label className="block mb-2 font-medium">
+            GitHub Link:
+            <input
+              type="text"
+              name="githubLink"
+              value={formData.githubLink}
+              onChange={handleChange}
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+        </div>
+
+        {/* LinkedIn Link */}
+        <div>
+          <label className="block mb-2 font-medium">
+            LinkedIn Link:
+            <input
+              type="text"
+              name="linkedinLink"
+              value={formData.linkedinLink}
+              onChange={handleChange}
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+        </div>
+
+        {/* Personal Website */}
+        <div>
+          <label className="block mb-2 font-medium">
+            Personal Website:
+            <input
+              type="text"
+              name="personalWebsite"
+              value={formData.personalWebsite}
+              onChange={handleChange}
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+        </div>
+
         {/* Submit Button */}
         <button type="submit" className="bg-[#87A922] text-white py-2 px-4 rounded-md">
           Generate Resume
