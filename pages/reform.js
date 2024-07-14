@@ -184,6 +184,84 @@ export default function FormGen() {
             />
           </label>
         </div>
+        {/* Project Title and Choice */}
+        <div className="mb-4">
+          <label className="block mb-2 font-medium">
+            Project Title:
+            <input
+              type="text"
+              name="projectTitle"
+              value={formData.projectTitle}
+              onChange={handleChange}
+              required
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+          <div className="flex items-center space-x-4">
+            <label className="block mb-2 font-medium flex-1">
+              Project Choice:
+              <select
+                name="projectChoice"
+                value={formData.projectChoice}
+                onChange={handleChange}
+                className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+              >
+                <option value="file">Provide Github Link</option>
+                <option value="link">Provide Deployed Project Link</option>
+              </select>
+            </label>
+            {formData.projectChoice === 'file' && (
+              <label className="block mb-2 font-medium flex-1">
+                Github Link:
+                <input
+                  type="text"
+                  name="projectGithub"
+                  value={formData.projectGithub}
+                  onChange={handleChange}
+                  className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+                />
+              </label>
+            )}
+            {formData.projectChoice === 'link' && (
+              <label className="block mb-2 font-medium flex-1">
+                Deployed Project Link:
+                <input
+                  type="text"
+                  name="projectLink"
+                  value={formData.projectLink}
+                  onChange={handleChange}
+                  className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+                />
+              </label>
+            )}
+          </div>
+
+          {/* Project Description */}
+          <label className="block mb-2 font-medium">
+            Project Description:
+            <textarea
+              name="projectDescription"
+              value={formData.projectDescription}
+              onChange={handleChange}
+              required
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+        </div>
+
+        {/* Skills */}
+        <div>
+          <label className="block mb-2 font-medium">
+            Skills:
+            <textarea
+              name="skills"
+              value={formData.skills}
+              onChange={handleChange}
+              required
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+        </div>
         {/* Submit Button */}
         <button type="submit" className="bg-[#87A922] text-white py-2 px-4 rounded-md">
           Generate Resume
