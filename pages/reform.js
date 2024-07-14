@@ -65,6 +65,35 @@ export default function FormGen() {
             />
           </label>
         </div>
+        {/* Email */}
+        <div>
+          <label className="block mb-2 font-medium">
+            Email:
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+        </div>
+
+        {/* Phone */}
+        <div>
+          <label className="block mb-2 font-medium">
+            Phone:
+            <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+        </div>
         {/* Submit Button */}
         <button type="submit" className="bg-[#87A922] text-white py-2 px-4 rounded-md">
           Generate Resume
