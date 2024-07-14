@@ -94,6 +94,45 @@ export default function FormGen() {
             />
           </label>
         </div>
+        {/* Education */}
+        <div>
+          <label className="block mb-2 font-medium">
+            Education:
+            <textarea
+              name="education"
+              value={formData.education}
+              onChange={handleChange}
+              required
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+        </div>
+
+        {/* Experience 1 */}
+        <div>
+          <label className="block mb-2 font-medium">
+            Experience 1 (Company Name):
+            <textarea
+              name="experience1"
+              placeholder='Enter company name'
+              value={formData.experience1}
+              onChange={handleChange}
+              required
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+          <label className="block mt-4 mb-2 font-medium">
+            Experience 1 Highlights:
+            <textarea
+              name="experience1_highlights"
+              placeholder='Work experience highlights'
+              value={formData.experience1_highlights}
+              onChange={handleChange}
+              required
+              className="mt-1 text-xl bg-black text-[#06D001] font-vt323 block w-full border border-gray-300 rounded-md p-2"
+            />
+          </label>
+        </div>
         {/* Submit Button */}
         <button type="submit" className="bg-[#87A922] text-white py-2 px-4 rounded-md">
           Generate Resume
